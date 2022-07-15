@@ -1,4 +1,4 @@
-# 🐧Searching Algorithms
+# 🖇️ Sorting Algorithms
 ### 💫 All Time⌚ & Space🗑️ Complexity [\[Table\]](#t)
 #### ❄️ Bubble Sort [code](#bs)
 #### 🕵️ Selection Sort [code](#ss)
