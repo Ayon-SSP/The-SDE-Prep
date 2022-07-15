@@ -430,7 +430,7 @@ Strand Sort -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <style>
+    <!-- <style>
         table {
             border-collapse: collapse;
             width: 100%;
@@ -449,7 +449,7 @@ Strand Sort -->
         .redcolors {
             color: red;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <table border="2" width="100%">
