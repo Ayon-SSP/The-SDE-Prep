@@ -40,7 +40,7 @@ print(LinearSearch(lst,6))
 
 #### Code :
 ```python
-def LinearSearch(lst,toSearch):
+def BinarySearch(lst,toSearch):
     l = 0
     r = len(lst)-1
     while(l<=r):
@@ -54,7 +54,7 @@ def LinearSearch(lst,toSearch):
               
     return "Not found"
 lst = [0,1,2,3,4,5,6,7,8]
-print(LinearSearch(lst,6))
+print(BinarySearch(lst,6))
 ```
 
 
