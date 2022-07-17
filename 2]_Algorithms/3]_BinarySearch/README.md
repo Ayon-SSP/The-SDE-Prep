@@ -2,7 +2,7 @@
 
 Binary Search is a Divide and Conquer algorithm. 
 
-## Commonly asked interview questions that use binary search algorithm
+# 🏷️ Commonly asked interview questions that use binary search algorithm
 
 
 
