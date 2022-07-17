@@ -7,4 +7,4 @@ Binary Search is a Divide and Conquer algorithm.
 
 
 ### Search Insert Position
-<img src="source\Screenshot 2022-07-17 103807.png" alt="img for search insert position" width="300" >
+<img src="source\Screenshot 2022-07-17 103807.png" alt="img for search insert position" width="500" >
