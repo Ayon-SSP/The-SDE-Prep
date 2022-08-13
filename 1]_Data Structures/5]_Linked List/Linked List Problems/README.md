@@ -4,7 +4,7 @@
 
 <br>
 
-### 🧣Search in Rotated Sorted Array
+### 🧣Linked List Cycle
 
 <img src="source\floyds cycle deteection.png" alt="img for search insert position" width="500" ><br>
 
