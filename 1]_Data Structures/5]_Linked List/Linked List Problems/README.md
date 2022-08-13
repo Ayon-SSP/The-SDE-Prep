@@ -4,7 +4,8 @@
 
 <br>
 
-### 🧣Linked List Cycle
+### 🧣Linked List Cycle (Floyd's Cycle Detection)
+
 
 <img src="source\floyds cycle deteection.png" alt="img for search insert position" width="500" ><br>
 
