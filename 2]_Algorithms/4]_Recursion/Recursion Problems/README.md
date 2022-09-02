@@ -2,6 +2,7 @@
 
 
 <img src="source\rb.jpg" alt="">
+
 ### ➡️ Print Decreasing using Recursion
 ```python
 def printDecreasing(n):
@@ -116,6 +117,7 @@ Post 2
 ### ➡️ Tower of Hanoi
 <img src="source\Tower_of_Hanoi.webp" alt="">
 <img src="source\Tower_of_Hanoibg.webp" alt="">
+
 ```python
 
 ```
