@@ -1,6 +1,7 @@
 # ♻️ Recursion & Backtracking Problems
 
-![Recursion & Backtracking img](source\rb.jpg)
+
+<img src="source\rb.jpg" alt="">
 ### ➡️ Print Decreasing using Recursion
 ```python
 def printDecreasing(n):
@@ -113,8 +114,8 @@ Post 1
 Post 2
 ```
 ### ➡️ Tower of Hanoi
-![tOH](source\Tower_of_Hanoi.webp)
-![tOH](source\Tower_of_Hanoibg.webp)
+<img src="source\Tower_of_Hanoi.webp" alt="">
+<img src="source\Tower_of_Hanoibg.webp" alt="">
 ```python
 
 ```
