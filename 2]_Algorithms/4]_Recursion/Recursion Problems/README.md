@@ -1,6 +1,6 @@
 # ♻️ Recursion & Backtracking Problems
 
-![Recursion & Backtracking img](source\Recursion&Backtracking_structure.jpg)
+![Recursion & Backtracking img](source\rb.jpg)
 ### ➡️ Print Decreasing using Recursion
 ```python
 def printDecreasing(n):
