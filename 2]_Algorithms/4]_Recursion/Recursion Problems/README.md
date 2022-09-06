@@ -253,6 +253,113 @@ print(allIndices([2, 7, 3, 12, 87, 12, 54, 8,12],12,0,0))
 ```
 
 ## 🎡 Recursion With ArrayList & Strings
+### ➡️ Get Subsequence
+> n is the length of the string
+
+`n -> 2^n [Subsequences]`
+```python
+def Subsequence(s):
+    if(len(s)==0):
+        return [""]
+
+    lst_1 = Subsequence(s[1:])
+    lst_ans = []
+    for st in lst_1:
+        lst_ans.append(st)
+    for st in lst_1:
+        lst_ans.append(s[0]+st)
+    return lst_ans
+lst = Subsequence('abc')
+print(lst)
+```
+```
+['', 'c', 'b', 'bc', 'a', 'ac', 'ab', 'abc']
+```
+### ➡️ Get Keypad Combination
+```python
+phoneKeys = ['.;','abc','def','ghi','jkl','mno','pqrs','tu','vwx','yz']
+def getKPC(str):
+    if(len(str)==0):
+        return [""]
+
+    lst_ans = []
+    last_combinations_lst = getKPC(str[1:])
+    for preStr in last_combinations_lst:
+        for comb_char in phoneKeys[int(str[0])]:
+            lst_ans.append(comb_char+preStr)
+    return lst_ans
+
+print(getKPC('619'))
+```
+```
+['pay', 'qay', 'ray', 'say', 'pby', 'qby', 'rby', 'sby', 'pcy', 'qcy', 'rcy', 'scy', 'paz', 'qaz', 'raz', 'saz', 'pbz', 'qbz', 'rbz', 'sbz', 'pcz', 'qcz', 'rcz', 'scz']
+```
+### ➡️ Get Stairs Path
+```python
+def allpaths(n):
+    if(n==0):
+        return [""]
+    elif (n < 0):
+        return []
+
+    lst_ans = []
+    for lcl_str in allpaths(n-1):
+        lst_ans.append("1"+lcl_str)
+    for lcl_str in allpaths(n-2):
+        lst_ans.append("2"+lcl_str)
+    for lcl_str in allpaths(n-3):
+        lst_ans.append("3"+lcl_str)
+
+    return lst_ans
+allP = allpaths(3)
+print(allP)
+```
+```
+['111', '12', '21', '3']
+```
+### ➡️ Get Maze Paths
+```python
+def getmasepath1(x1,y1,x2,y2):
+    if(x1==x2 and y1==y2):
+        return [""]
+
+    path_lst = []
+
+    if(x1<x2):
+        for aftHmove in getmasepath1(x1 + 1,y1 , x2, y2):
+            path_lst.append("v"+ aftHmove)
+    if(y1<y2):
+        for aftVmove in getmasepath1(x1,y1+1,x2,y2):
+            path_lst.append("h"+aftVmove)
+
+    return path_lst
+mzPath = getmasepath1(1,1,3,3)
+print(mzPath)
+```
+```
+['vvhh', 'vhvh', 'vhhv', 'hvvh', 'hvhv', 'hhvv']
+```
+### ➡️ Get Maze Paths with Jump
+```python
+
+```
+```
+
+```
+### ➡️ 
+```python
+
+```
+```
+
+```
+### ➡️ 
+```python
+
+```
+```
+
+```
 ### ➡️ 
 ```python
 
