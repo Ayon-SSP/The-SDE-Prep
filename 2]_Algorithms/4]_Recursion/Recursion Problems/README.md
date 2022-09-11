@@ -705,11 +705,56 @@ printNQueens(chess,0,"")
  0-2, 1-0, 2-3, 3-1,
 ```
 
-### ➡️ 
+### ➡️ Knights Tour
 ```python
+def displayBoard(chess):
+    for i in range(len(chess)):
+        for j in range(len(chess[0])):
+            print(chess[i][j],end=" ")
+        print()
+    print()
 
+def printknightsTour(chess,r,c,move):
+    if r<0 or c<0 or r>=len(chess) or c>=len(chess) or chess[r][c]!=0:
+        return
+    elif move == len(chess)*len(chess):
+        chess[r][c] = move
+        displayBoard(chess)
+        chess[r][c] = 0
+        return
+
+    chess[r][c] = move
+    printknightsTour(chess, r - 2, c + 1, move+1)
+    printknightsTour(chess, r - 1, c + 2, move+1)
+    printknightsTour(chess, r + 1, c + 2, move+1)
+    printknightsTour(chess, r + 2, c + 1, move+1)
+    printknightsTour(chess, r + 2, c - 1, move+1)
+    printknightsTour(chess, r + 1, c - 2, move+1)
+    printknightsTour(chess, r - 1, c - 2, move+1)
+    printknightsTour(chess, r - 2, c - 1, move+1)
+    chess[r][c] = 0
+
+
+n = int(input())
+import numpy as np
+chess = np.zeros((n,n),dtype=int)
+x,y = map(int,input().split())
+printknightsTour(chess,x,y,1)
 ```
 ```
+5
+2 0
+25 2 13 8 23 
+12 7 24 3 14 
+1 18 15 22 9 
+6 11 20 17 4 
+19 16 5 10 21 
 
+19 2 13 8 21 
+12 7 20 3 14 
+1 18 15 22 9 
+6 11 24 17 4 
+25 16 5 10 23 
+...
 ```
 
