@@ -275,6 +275,28 @@ print(lst)
 ```
 ['', 'c', 'b', 'bc', 'a', 'ac', 'ab', 'abc']
 ```
+### ➡️ Print Subsequence
+```python
+def subsequence(s,s_done):
+    if(s==''):
+        print(f"'{s_done}'")
+        return
+
+    subsequence(s[1:],s_done)
+    subsequence(s[1:],s_done+s[0])
+
+subsequence('abc','')
+```
+```
+''
+'c'
+'b'
+'bc'
+'a'
+'ac'
+'ab'
+'abc'
+```
 ### ➡️ Get Keypad Combination
 ```python
 phoneKeys = ['.;','abc','def','ghi','jkl','mno','pqrs','tu','vwx','yz']
@@ -293,6 +315,43 @@ print(getKPC('619'))
 ```
 ```
 ['pay', 'qay', 'ray', 'say', 'pby', 'qby', 'rby', 'sby', 'pcy', 'qcy', 'rcy', 'scy', 'paz', 'qaz', 'raz', 'saz', 'pbz', 'qbz', 'rbz', 'sbz', 'pcz', 'qcz', 'rcz', 'scz']
+```
+### ➡️ Print Keypad Combination
+```python
+phoneKeys = ['.;','abc','def','ghi','jkl','mno','pqrs','tu','vwx','yz']
+def getKPC2(s,s_ans):
+    if(s==''):
+        print(f"'{s_ans}'")
+        return
+    for keyChar in phoneKeys[int(s[0])]:
+        getKPC2(s[1:],s_ans+keyChar)
+getKPC2('678','')
+```
+```
+'ptv'
+'ptw'
+'ptx'
+'puv'
+'puw'
+'pux'
+'qtv'
+'qtw'
+'qtx'
+'quv'
+'quw'
+'qux'
+'rtv'
+'rtw'
+'rtx'
+'ruv'
+'ruw'
+'rux'
+'stv'
+'stw'
+'stx'
+'suv'
+'suw'
+'sux'
 ```
 ### ➡️ Get Stairs Path
 ```python
@@ -317,56 +376,335 @@ print(allP)
 ```
 ['111', '12', '21', '3']
 ```
+### ➡️ Print Stair Paths
+```python
+def allpaths2(s,s_ans):
+    if(s<0):
+        return
+    elif(s==0):
+        print(s_ans)
+        return
+    else:
+        allpaths2(s-1,s_ans + '1')
+        allpaths2(s-2,s_ans + '2')
+        allpaths2(s-3,s_ans + '3')
+allpaths2(4,'')
+```
+```
+1111
+112
+121
+13
+211
+22
+31
+```
 ### ➡️ Get Maze Paths
 ```python
-def getmasepath1(x1,y1,x2,y2):
+def getmasepath(x1,y1,x2,y2):
     if(x1==x2 and y1==y2):
         return [""]
 
     path_lst = []
 
     if(x1<x2):
-        for aftHmove in getmasepath1(x1 + 1,y1 , x2, y2):
+        for aftHmove in getmasepath(x1 + 1,y1 , x2, y2):
             path_lst.append("v"+ aftHmove)
     if(y1<y2):
-        for aftVmove in getmasepath1(x1,y1+1,x2,y2):
+        for aftVmove in getmasepath(x1,y1+1,x2,y2):
             path_lst.append("h"+aftVmove)
 
     return path_lst
-mzPath = getmasepath1(1,1,3,3)
+mzPath = getmasepath(1,1,3,3)
 print(mzPath)
 ```
 ```
 ['vvhh', 'vhvh', 'vhhv', 'hvvh', 'hvhv', 'hhvv']
 ```
+### ➡️ Print Maze Paths
+```python
+def getmasepath2(x1,y1,x2,y2,s_ans):
+    if(x1==x2 and y1==y2):
+        print(s_ans)
+    if(x1>x2 or y1>y2):
+        return
+
+    getmasepath2(x1+1,y1,x2,y2,s_ans+'h')
+    getmasepath2(x1,y1+1,x2,y2,s_ans+'v')
+
+getmasepath2(1,1,3,3,'')
+```
+```
+hhvv
+hvhv
+hvvh
+vhhv
+vhvh
+vvhh
+```
 ### ➡️ Get Maze Paths with Jump
 ```python
+def getmasepath(x1,y1,x2,y2):
+    if(x1==x2 and y1==y2):
+        return ['']
+
+    path_lst = []
+
+
+    for i in range(1,x2-x1+1):
+        for aftHmove in getmasepath(x1 + i, y1, x2, y2):
+            path_lst.append(f"h{i}{aftHmove}")
+
+    for i in range(1,y2-y1+1):
+        for aftVmove in getmasepath(x1, y1 + i, x2, y2):
+            path_lst.append(f"v{i}{aftVmove}")
+
+    for i in range(1,min(x2-x1+1,y2-y1+1)):
+        for aftDmove in getmasepath(x1+i, y1 + i, x2, y2):
+            path_lst.append(f"d{i}{aftDmove}")
+
+    return path_lst
+
+mzPath = getmasepath(1,1,3,3)
+print(mzPath)
+```
+```
+['h1h1v1v1', 'h1h1v2', 'h1v1h1v1', 'h1v1v1h1', 'h1v1d1', 'h1v2h1', 'h1d1v1', 'h2v1v1', 'h2v2', 'v1h1h1v1', 'v1h1v1h1', 'v1h1d1', 'v1h2v1', 'v1v1h1h1', 'v1v1h2', 'v1d1h1', 'v2h1h1', 'v2h2', 'd1h1v1', 'd1v1h1', 'd1d1', 'd2']
 
 ```
-```
-
-```
-### ➡️ 
+### ➡️ Print Maze Path with Jumps
 ```python
+def getmasepathWithJumps(x1,y1,x2,y2,s_ans):
+    if(x1==x2 and y1==y2):
+        print(s_ans)
 
-```
-```
+    for i in range(1,x2-x1+1):
+        getmasepathWithJumps(x1+i,y1,x2,y2,s_ans+'h'+str(i))
+    for i in range(1,y2-y1+1):
+        getmasepathWithJumps(x1,y1+i,x2,y2,s_ans+'v'+str(i))
+    for i in range(1,min(y2-y1,x2-x1)+1):
+        getmasepathWithJumps(x1+i,y1+i,x2,y2,s_ans+'d'+str(i))
 
+getmasepathWithJumps(1,1,3,3,'')
 ```
-### ➡️ 
+```
+h1h1v1v1
+h1h1v2
+h1v1h1v1
+h1v1v1h1
+h1v1d1
+h1v2h1
+h1d1v1
+h2v1v1
+h2v2
+v1h1h1v1
+v1h1v1h1
+v1h1d1
+v1h2v1
+v1v1h1h1
+v1v1h2
+v1d1h1
+v2h1h1
+v2h2
+d1h1v1
+d1v1h1
+d1d1
+d2
+```
+### ➡️ Print Permutations
 ```python
+def permutations(s,s_dones):
+    if(len(s)==0):
+        print(s_dones,end = ' ')
+        return
+    for i in range(len(s)):
+        permutations(s[:i]+s[i+1:],s_dones+s[i])
 
+permutations('abc','')
 ```
 ```
-
-```
-### ➡️ 
+abc acb bac bca cab cba 
+``` 
+### ➡️ Print Encodings
 ```python
+def Encodings(n,s):
+    if(n==''):
+        print(s)
+    if(len(n)<=0 or n[0]=='0'):
+        return
+    Encodings(n[1:],s + chr(int(n[0])+96))
+    if(len(n)>=2 and int(n[0:2])<=26 and n[0]!='0'):
+        Encodings(n[2:],s +   chr(int(n[0:2])+96) )
 
+Encodings('12103','')
 ```
+```
+abac
+abm
+auc
+lac
+lm
+```
+## 🖇️ Recursion Backtracking
+### ➡️ Flood Fill
+```python
+def floodfill(maze,row,col,psf):
+    if(row<0 or col<0 or row>=len(maze) or col>=len(maze[0]) or maze[row][col]==True):
+        return
+
+    if(row == len(maze)-1 and col == len(maze[0])-1):
+        print(psf)
+        return
+    maze[row][col] = True
+    floodfill(maze,row,col+1,psf+'r')
+    floodfill(maze,row+1,col,psf+'b')
+    floodfill(maze,row,col-1,psf+'l')
+    floodfill(maze,row-1,col,psf+'t')
+    maze[row][col] = False
+
+
+map_2D = []
+i,j = map(int,input().split())
+for i in range(i):
+    map_2D.append(list(map(int,input().split())))
+
+print(map_2D)
+floodfill(map_2D,0,0,'')
+```
+```
+6 7
+0 1 0 0 0 0 0
+0 1 0 1 1 1 0
+0 0 0 0 0 0 0
+1 0 1 1 0 1 1
+1 0 1 1 0 1 1
+1 0 0 0 0 0 0
+[[0, 1, 0, 0, 0, 0, 0], [0, 1, 0, 1, 1, 1, 0], [0, 0, 0, 0, 0, 0, 0], [1, 0, 1, 1, 0, 1, 1], [1, 0, 1, 1, 0, 1, 1], [1, 0, 0, 0, 0, 0, 0]]
+bbrrrrbbbrr
+bbrrttrrrrbbllbbbrr
+bbrbbbrrrrr
+```
+#### ➡️ Flood Fill Print Path
+```python
+import numpy as np
+map_2D = np.zeros((6,7),dtype=int)
+map_2D[0][1]=map_2D[1][1]=map_2D[1][3]=map_2D[1][4]=map_2D[1][5]= map_2D[1][5]= map_2D[3][0]= map_2D[3][2]= map_2D[3][3]= map_2D[3][5]= map_2D[3][6]=map_2D[4][0]= map_2D[4][2]= map_2D[4][3]= map_2D[4][5]= map_2D[4][6]= map_2D[5][0]= 1
+visited_map = np.zeros((6,7),dtype=bool)
+print(map_2D)
+
+def floodfill(maze,row,col,psf,visited_map):
+    if(row<0 or col<0 or row==len(maze) or col == len(maze[0]) or maze[row][col] == 1 or visited_map[row][col]==True):
+        return
+    if(row == len(maze)-1 and col == len(maze[0])-1):
+        print("-----------------------------")
+        visited_map[row][col] = True
+        for i in range(len(visited_map)):
+            for j in range(len(visited_map[0])):
+                print(1 if (visited_map[i][j]) else '`',end=" ")
+            print()
+        print(psf)
+        visited_map[row][col] = False
+        return
+    visited_map[row][col] = True
+    floodfill(maze, row, col + 1, psf + "R", visited_map)
+    floodfill(maze, row - 1, col, psf + "T", visited_map)
+    floodfill(maze, row, col - 1, psf + "L", visited_map)
+    floodfill(maze, row + 1, col, psf + "D", visited_map)
+    visited_map[row][col] = False
+floodfill(map_2D,0,0,'',visited_map)
+```
+```
+[[0 1 0 0 0 0 0]
+ [0 1 0 1 1 1 0]
+ [0 0 0 0 0 0 0]
+ [1 0 1 1 0 1 1]
+ [1 0 1 1 0 1 1]
+ [1 0 0 0 0 0 0]]
+-----------------------------
+1 ` ` ` ` ` ` 
+1 ` ` ` ` ` ` 
+1 1 1 1 1 ` ` 
+` ` ` ` 1 ` ` 
+` ` ` ` 1 ` ` 
+` ` ` ` 1 1 1 
+DDRRRRDDDRR
+-----------------------------
+1 ` 1 1 1 1 1 
+1 ` 1 ` ` ` 1 
+1 1 1 ` 1 1 1 
+` ` ` ` 1 ` ` 
+` ` ` ` 1 ` ` 
+` ` ` ` 1 1 1 
+DDRRTTRRRRDDLLDDDRR
+-----------------------------
+1 ` ` ` ` ` ` 
+1 ` ` ` ` ` ` 
+1 1 ` ` ` ` ` 
+` 1 ` ` ` ` ` 
+` 1 ` ` ` ` ` 
+` 1 1 1 1 1 1 
+DDRDDDRRRRR
+```
+### ➡️ Target Sum Subsets
+```python
+def printTargetSumSubset(lst,lst_ans):
+    if(len(lst)==0):
+        if(sum(lst_ans)==target):
+            print("->",lst_ans)
+        return
+
+    printTargetSumSubset(lst[1:],lst_ans+[lst[0]])
+    printTargetSumSubset(lst[1:],lst_ans)
+
+target = 60
+lst_num = [10,20,30,40,50,60]
+printTargetSumSubset(lst_num,[])
+```
+```
+-> [10, 20, 30]
+-> [10, 50]
+-> [20, 40]
+-> [60]
 ```
 
+### ➡️ N Queens
+```python
+def isItaSafePlaceForTheQueen(chess,row,col):
+    for r in range(row-1,-1,-1):
+        if(chess[r][col]):
+            return False
+    for r,c in zip(range(row-1,-1,-1),range(col-1,-1,-1)):
+        if (chess[r][c]):
+            return False
+    for r,c in zip(range(row-1,-1,-1),range(col+1,len(chess[0]))):
+        if(chess[r][c]):
+            return False
+    return True
+
+
+def printNQueens(chess,row,qsf):
+    if row==len(chess):
+        print(qsf)
+        return
+
+    for col in range(len(chess[0])):
+        if isItaSafePlaceForTheQueen(chess,row,col)==False:
+            continue
+
+        chess[row][col] = 1
+        printNQueens(chess,row+1,f"{qsf} {row}-{col},")
+        chess[row][col] = 0
+
+import numpy as np
+chess = np.zeros((4,4),dtype=int)
+
+printNQueens(chess,0,"")
 ```
+```
+ 0-1, 1-3, 2-0, 3-2,
+ 0-2, 1-0, 2-3, 3-1,
+```
+
 ### ➡️ 
 ```python
 
