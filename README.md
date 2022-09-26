@@ -16,7 +16,5 @@
 
 <img src="1]_Data Structures\source\hacktoberfest2022.png" alt="hacktoberfest2022" width="100%"><br>
 
-<img src="1]_Data Structures\source\hacktoberfest2022.png" alt="hacktoberfest2022" width="500"><br>
-
 <p align="right">credit to <a href="https://github.com/SaicharanKandukuri">@SaicharanKandukuri</a></p>
 
