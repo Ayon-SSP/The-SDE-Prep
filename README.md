@@ -13,3 +13,8 @@
 <!-- ## Data Structures
 ## Algorithms
 ## Projects -->
+
+<img src="1]_Data Structures\source\hacktoberfest2022.png" alt="hacktoberfest2022" width="100%"><br>
+
+<p align="right">credit to <a href="https://github.com/SaicharanKandukuri">@SaicharanKandukuri</a></p>
+
