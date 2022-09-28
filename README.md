@@ -9,8 +9,7 @@
 </div>
 
 <div align="center">
-<b><i>If you appreciate my work, please</i></b> 🌟 <b><i>this repository. It motivates me. 🚀🚀</i></b>
-
+<b><i>If you appreciate my work, please</i></b> 🌟 <b><i>this repository. It motivates me. 🚀🚀</i></b><br>
 <br>
 </div>
 
