@@ -30,8 +30,6 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 ## Algorithms
 ## Projects -->
 
-<img src="images\hacktoberfest2022.png" alt="hacktoberfest2022" width="100%"><br>
-
 <p align="right">credit to <a href="https://www.figma.com/file/ckKqpktLjApptEWOFe92Ms/HacktoberFest-Banner">@SaicharanKandukuri</a></p>
 
 # `Contributing` <img align="center" src="images\Handshake.gif" height="30px">
