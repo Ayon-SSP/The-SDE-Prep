@@ -77,7 +77,7 @@ public:
         // query range lies inside the segment range
         if(ss <= qs && qe <= se) {
             // binary search over the sorted segment range.
-            // count of elements which are >= (greater than or equal to) x.
+            // count of elements which are <= (smaller than or equal to) x.
             return upper_bound(tree[si].begin(), tree[si].end(), x) - tree[si].begin(); 
         }
         
@@ -93,3 +93,23 @@ public:
         return left + right;
     }  
 };
+
+int main() {
+    int n;
+    cin >> n;
+    
+    vector<int> arr(n);
+    for(int i = 0; i < n; i++) {
+        cin >> arr[i];
+    }
+    
+    MergeSortTree tree(n, arr);
+    tree.build_tree(0, 0, n - 1);
+    
+    // assuming everything to be in zero-based indexing.
+    int queryStart, queryEnd, value;
+    cin >> queryStart >> queryEnd >> value;
+    
+    // print number of elements gre
+    cout << tree.query(0, 0, n - 1, queryStart, queryEnd, value);
+}
