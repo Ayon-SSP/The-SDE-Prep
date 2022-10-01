@@ -18,10 +18,7 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep&label=%F0%9F%93%BA%20VISITORS&labelColor=%23d9e3f0&countColor=%232ccce4)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep)
 </div>
 
-<div align="center">
-<b><i>If you appreciate my work, please</i></b> 🌟 <b><i>this repository. It motivates me. 🚀🚀</i></b><br>
-<br>
-</div>
+**_If you appreciate my work, please 🌟 this repository. It motivates me. 🚀🚀_**
 
 <!-- 
 <a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep&label=%F0%9F%93%BA%20VISITORS&labelColor=%23d9e3f0&countColor=%232ccce4" /></a> -->
@@ -29,6 +26,8 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 <!-- ## Data Structures
 ## Algorithms
 ## Projects -->
+
+<img src="images\hacktoberfest2022.png" alt="hacktoberfest2022" width="100%"><br>
 
 <p align="right">credit to <a href="https://www.figma.com/file/ckKqpktLjApptEWOFe92Ms/HacktoberFest-Banner">@SaicharanKandukuri</a></p>
 
