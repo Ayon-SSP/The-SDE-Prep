@@ -1,5 +1,7 @@
 # The SDE Preparation
 
+[![Banner](images/hacktoberfest2022.png)](etc/CREDITS.md)
+
 All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 
 ```cmd
@@ -13,10 +15,7 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 
  <!-- ![image](https://user-images.githubusercontent.com/80549753/177022618-6b8f1dd6-b4ee-4083-b12a-38bd1a89e10b.png) -->
 
-<div align="right">
-
 [![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep&label=%F0%9F%93%BA%20VISITORS&labelColor=%23d9e3f0&countColor=%232ccce4)](https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep)
-</div>
 
 **_If you appreciate my work, please 🌟 this repository. It motivates me. 🚀🚀_**
 
@@ -26,10 +25,6 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 <!-- ## Data Structures
 ## Algorithms
 ## Projects -->
-
-<img src="images\hacktoberfest2022.png" alt="hacktoberfest2022" width="100%"><br>
-
-<p align="right">credit to <a href="https://www.figma.com/file/ckKqpktLjApptEWOFe92Ms/HacktoberFest-Banner">@SaicharanKandukuri</a></p>
 
 # `Contributing` <img align="center" src="images\Handshake.gif" height="30px">
 
