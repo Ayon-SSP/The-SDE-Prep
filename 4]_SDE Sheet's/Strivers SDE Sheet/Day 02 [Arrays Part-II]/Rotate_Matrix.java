@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class RotateMatrix  
 {  
   //creating a function to rotate a matrix by 90 degrees Anti-clockwise  
