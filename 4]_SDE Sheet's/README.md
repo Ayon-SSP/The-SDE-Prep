@@ -18,7 +18,7 @@
 * Day 13 [Stack and Queue]
 * Day 14 [Stack and Queue Part-II]
 * Day 15 [String]
-* Day 16 String Part-II
+* Day 16 [String Part-II]
 * Day 17 [Binary Tree]
 * Day 18 [Binary Tree part-II]
 * Day 19 [Binary Tree part-III]
