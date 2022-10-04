@@ -1,36 +1,36 @@
 # 🏆SDE Sheet's
 
-### 📚 [Love Babbar DSA Sheet](https://github.com/Ayon-SSP/The-SDE-Prep/blob/main/4%5D_SDE%20Sheet's/Love%20Babbar%20DSA%20Sheet/FINAL450.xlsx)
-### 📚 [Strivers SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)
+## 📚 [Love Babbar DSA Sheet](https://github.com/Ayon-SSP/The-SDE-Prep/blob/main/4%5D_SDE%20Sheet's/Love%20Babbar%20DSA%20Sheet/FINAL450.xlsx)
+## 📚 [Strivers SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)
 
-* Day 01 [Arrays]
-* Day 02 [Arrays Part-II]
-* Day 03 [Arrays Part-III]
-* Day 04 [Arrays Part-IV]
-* Day 05 [Linked List]
-* Day 06 [Linked List Part-II]
-* Day 07 [Linked List and Arrays]
-* Day 08 [Greedy Algorithm]
-* Day 09 [Recursion]
-* Day 10 [Recursion and Backtracking]
-* Day 11 [Binary Search]
-* Day 12 [Heaps]
-* Day 13 [Stack and Queue]
-* Day 14 [Stack and Queue Part-II]
-* Day 15 [String]
-* Day 16 [String Part-II]
-* Day 17 [Binary Tree]
-* Day 18 [Binary Tree part-II]
-* Day 19 [Binary Tree part-III]
-* Day 20 [Binary Search Tree]
-* Day 21 [Binary Search Tree Part-II]
-* Day 22 [Binary Trees[Miscellaneous]]
-* Day 23 [Graph]
-* Day 24 [Graph Part-II]
-* Day 25 [Dynamic Programming]
-* Day 26 [Dynamic Programming Part-II]
-* Day 27 [Trie]
-* Day 28 [Operating System]
-* Day 29 [DBMS]
-* Day 30 [Computer Networks]
-* Day 31 [Project Overview]
+1. Day 01 [`Arrays`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2001%20%5BArrays%5D)
+2. Day 02 [`Arrays Part-II`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2002%20%5BArrays%20Part-II%5D)
+3. Day 03 [`Arrays Part-III`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2003%20%5BArrays%20Part-III%5D)
+4. Day 04 [`Arrays Part-IV`]()
+5. Day 05 [`Linked List`]()
+6. Day 06 [`Linked List Part-II`]()
+7. Day 07 [`Linked List and Arrays`]()
+8. Day 08 [`Greedy Algorithm`]()
+9. Day 09 [`Recursion`]()
+10. Day 10 [`Recursion and Backtracking`]()
+11. Day 11 [`Binary Search`]()
+12. Day 12 [`Heaps`]()
+13. Day 13 [`Stack and Queue`]()
+14. Day 14 [`Stack and Queue Part-II`]()
+15. Day 15 [`String`]()
+16. Day 16 [`String Part-II`]()
+17. Day 17 [`Binary Tree`]()
+18. Day 18 [`Binary Tree part-II`]()
+19. Day 19 [`Binary Tree part-III`]()
+20. Day 20 [`Binary Search Tree`]()
+21. Day 21 [`Binary Search Tree Part-II`]()
+22. Day 22 [`Binary Trees[Miscellaneous]`]()
+23. Day 23 [`Graph`]()
+24. Day 24 [`Graph Part-II`]()
+25. Day 25 [`Dynamic Programming`]()
+26. Day 26 [`Dynamic Programming Part-II`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2026%20%5BDynamic%20Programming%20Part-II%5D)
+27. Day 27 [`Trie`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2027%20%5BTrie%5D)
+28. Day 28 [`Operating System`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2028%20%5BOperating%20System%5D)
+29. Day 29 [`DBMS`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2029%20%5BDBMS%5D)
+30. Day 30 [`Computer Networks`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2030%20%5BComputer%20Networks%5D)
+31. Day 31 [`Project Overview`](https://github.com/Ayon-SSP/The-SDE-Prep/tree/main/4%5D_SDE%20Sheet's/Strivers%20SDE%20Sheet/Day%2031%20%5BProject%20Overview%5D)
