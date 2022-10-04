@@ -1,36 +1,36 @@
 # 🏆SDE Sheet's
 
-### 📚 [Love Babbar DSA Sheet](https://github.com/Ayon-SSP/The-SDE-Prep/blob/main/4%5D_SDE%20Sheet's/Love%20Babbar%20DSA%20Sheet/FINAL450.xlsx)
-### 📚 [Strivers SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)
+## 📚 [Love Babbar DSA Sheet](https://github.com/Ayon-SSP/The-SDE-Prep/blob/main/4%5D_SDE%20Sheet's/Love%20Babbar%20DSA%20Sheet/FINAL450.xlsx)
+## 📚 [Strivers SDE Sheet](https://takeuforward.org/interviews/strivers-sde-sheet-top-coding-interview-problems/)
 
-* Day 01 [Arrays]
-* Day 02 [Arrays Part-II]
-* Day 03 [Arrays Part-III]
-* Day 04 [Arrays Part-IV]
-* Day 05 [Linked List]
-* Day 06 [Linked List Part-II]
-* Day 07 [Linked List and Arrays]
-* Day 08 [Greedy Algorithm]
-* Day 09 [Recursion]
-* Day 10 [Recursion and Backtracking]
-* Day 11 [Binary Search]
-* Day 12 [Heaps]
-* Day 13 [Stack and Queue]
-* Day 14 [Stack and Queue Part-II]
-* Day 15 [String]
-* Day 16 [String Part-II]
-* Day 17 [Binary Tree]
-* Day 18 [Binary Tree part-II]
-* Day 19 [Binary Tree part-III]
-* Day 20 [Binary Search Tree]
-* Day 21 [Binary Search Tree Part-II]
-* Day 22 [Binary Trees[Miscellaneous]]
-* Day 23 [Graph]
-* Day 24 [Graph Part-II]
-* Day 25 [Dynamic Programming]
-* Day 26 [Dynamic Programming Part-II]
-* Day 27 [Trie]
-* Day 28 [Operating System]
-* Day 29 [DBMS]
-* Day 30 [Computer Networks]
-* Day 31 [Project Overview]
+1. Day 01 [`Arrays`]()
+2. Day 02 [`Arrays Part-II`]()
+3. Day 03 [`Arrays Part-III`]()
+4. Day 04 [`Arrays Part-IV`]()
+5. Day 05 [`Linked List`]()
+6. Day 06 [`Linked List Part-II`]()
+7. Day 07 [`Linked List and Arrays`]()
+8. Day 08 [`Greedy Algorithm`]()
+9. Day 09 [`Recursion`]()
+10. Day 10 [`Recursion and Backtracking`]()
+11. Day 11 [`Binary Search`]()
+12. Day 12 [`Heaps`]()
+13. Day 13 [`Stack and Queue`]()
+14. Day 14 [`Stack and Queue Part-II`]()
+15. Day 15 [`String`]()
+16. Day 16 [`String Part-II`]()
+17. Day 17 [`Binary Tree`]()
+18. Day 18 [`Binary Tree part-II`]()
+19. Day 19 [`Binary Tree part-III`]()
+20. Day 20 [`Binary Search Tree`]()
+21. Day 21 [`Binary Search Tree Part-II`]()
+22. Day 22 [`Binary Trees[Miscellaneous]`]()
+23. Day 23 [`Graph`]()
+24. Day 24 [`Graph Part-II`]()
+25. Day 25 [`Dynamic Programming`]()
+26. Day 26 [`Dynamic Programming Part-II`]()
+27. Day 27 [`Trie`]()
+28. Day 28 [`Operating System`]()
+29. Day 29 [`DBMS`]()
+30. Day 30 [`Computer Networks`]()
+31. Day 31 [`Project Overview`]()
