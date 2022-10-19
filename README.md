@@ -27,3 +27,10 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 ## Projects -->
 
 > REFER TO [CONTRIBUTING.md](CONTRIBUTING.md) FOR CONTRIBUTING GUIDELINES.
+
+
+## Runs-On
+
+![People](metrics.plugin.people.repository.svg)
+
+> these people are fuel for this project.
