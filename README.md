@@ -34,3 +34,10 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 ![People](metrics.plugin.people.repository.svg)
 
 > these people are fuel for this project.
+
+## Licence
+
+MIT
+Copyright (c) 2022 AYON 
+
+###### feel free to contribute to this repo🤍
