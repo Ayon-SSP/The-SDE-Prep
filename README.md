@@ -29,7 +29,7 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 > REFER TO [CONTRIBUTING.md](CONTRIBUTING.md) FOR CONTRIBUTING GUIDELINES.
 
 
-## Runs-On
+## ✨ Runs-On
 
 ![People](metrics.plugin.people.repository.svg)
 
@@ -40,4 +40,6 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 MIT
 Copyright (c) 2022 AYON 
 
-###### feel free to contribute to this repo🤍
+> feel free to contribute to this repo 💜
+
+# Happy Coding 👨‍💻
