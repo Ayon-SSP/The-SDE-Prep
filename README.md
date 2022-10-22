@@ -1,8 +1,8 @@
-# The SDE Preparation
+<div align="center"><h1>⚔️ The SDE Prep ⚔️</h1></div>
+<div align="center"><h4><i>📚 A curated list of resources to help you prepare for the Software Development Engineer Interview 📚</i></h4></div>
 
 [![Banner](images/hacktoberfest2022.png)](etc/CREDITS.md)
 
-All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 
 ```cmd
 - 🎯 | [Aim] :- Help Students who are preparing for SDE Interview.
