@@ -36,7 +36,7 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 > these people are fuel for this project.
 
 
-## 📑 [`References`]()
+# 📑 [`References`]()
 
 ## 📚 [`Books`]()
 
@@ -44,7 +44,7 @@ All the DSA(Data-Structures & Algorithms), Concepts and Implementations
 - Object Oriented Programming with C++ by E Balaguruswamy
 - Data Structures and Algorithms in Python by Tamassia
 
-## 🌐 Websites
+## 🌐 [`Websites`]()
 
 - [GeeksforGeeks](https://www.geeksforgeeks.org/)
 - [Javatpoint](https://www.javatpoint.com/)
