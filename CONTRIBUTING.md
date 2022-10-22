@@ -1,4 +1,4 @@
-# `Contributing` ![hand](images\Handshake.gif)
+# `Contributing` <img align="center" src="images\Handshake.gif" height="30px">
 
 > Don't forget to give a ⭐ if you like this repo.
 
