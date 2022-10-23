@@ -71,9 +71,8 @@ int main()
 
 	int K = arr.size();
 	int N = arr[0].size();
-
 	
 	findSmallestRange(arr, N, K);
-
+	//returning 
 	return 0;
 }
