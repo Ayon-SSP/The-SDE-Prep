@@ -1,5 +1,16 @@
 <div align="center"><h1>⚔️ The SDE Prep ⚔️</h1></div>
-<div align="center"><h4><i>📚 A curated list of resources to help you prepare for the Software Development Engineer Interview 📚</i></h4></div>
+<div align="center">
+
+<a href="https://github.com/ayon-ssp/The-SDE-Prep"><img src="https://sloc.xyz/github/ayon-ssp/The-SDE-Prep" alt="LOC"/></a>
+<a href="https://github.com/ayon-ssp/The-SDE-Prep/stargazers"><img src="https://img.shields.io/github/stars/ayon-ssp/The-SDE-Prep" alt="Stars Badge"/></a>
+<a href="https://github.com/ayon-ssp/The-SDE-Prep/network/members"><img src="https://img.shields.io/github/forks/ayon-ssp/The-SDE-Prep" alt="Forks Badge"/></a>
+<a href="https://github.com/ayon-ssp/The-SDE-Prep/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/ayon-ssp/The-SDE-Prep?color=2b9348"></a>
+
+<a href="https://visitorbadge.io/status?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep"><img src="https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2FAyon-SSP%2FThe-SDE-Prep&label=%F0%9F%93%BA%20VISITORS&labelColor=%23d9e3f0&countColor=%232ccce4" /></a>
+
+<h4><i>📚 A curated list of resources to help you prepare for the Software Development Engineer Interview 📚</i></h4>
+
+</div>
 
 [![Banner](images/hacktoberfest2022.png)](etc/CREDITS.md)
 
