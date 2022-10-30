@@ -123,7 +123,6 @@ print(plus_one(4))
 # add_one(5)
 
 
-
 """def plus_one(num):
     return num + 1
 carry = plus_one # it holdes the value
@@ -151,10 +150,6 @@ def val(a,b):
 print(val(3,4))
 """
 
-
-
-
-
 # def plus_one(number):
 #     return number + 1
 #
@@ -177,76 +172,231 @@ print(val(3,4))
 #
 # print(caller(plus_one))
 
+
+"""
+def printDecreasing(n):
+    if(n==0):
+        return
+    print(n,end=" ")
+    printDecreasing(n-1)
+
+printDecreasing(5)
+"""
+"""
+def printIncreasing(n):
+    if(n==0):
+        return
+    printIncreasing(n-1)
+    print(n, end=" ")
+
+printIncreasing(5)
+"""
+"""
+def printIncreasing(n):
+    if(n==0):
+        return
+    print(n, end=" ")
+    printIncreasing(n-1)
+    print(n, end=" ")
+
+printIncreasing(5)
+"""
+"""
+def factorial(n):
+    if(n==1):
+        return 1
+    return n*factorial(n-1)
+
+fac = factorial(5)
+print(fac)
+"""
+"""
+def power(x,n):
+    if(n==0):
+        return 1
+    return x*power(x,n-1)
+pow = power(2,6)
+print(pow)
+"""
+"""
+def powerLog(x,n):
+    if(n==0):
+        return 1
+    xpnb2 = powerLog(x,n//2)
+    xpn = xpnb2*xpnb2
+    if(n&1):
+        xpn = xpn*x
+    return xpn
+
+pow = powerLog(2,7)
+print(pow)
+"""
+
+"""
+def pzz(n):
+    if(n==0):
+        return
+    print("pre",n)
+    pzz(n-1)
+    print("In",n)
+    pzz(n - 1)
+    print("Post",n)
+
+pzz(2)
+"""
+"""
+
+def toh(n,a,b,c):
+    if(n==0):
+        return
+    toh(n-1,a,c,b)
+    print(a,"->",c)
+    toh(n-1,b,a,c)
+
+toh(3,'a','b','c')
+"""
+"""
+def displayAnList(lst,n):
+    if(len(lst)==n):
+        return
+    print(lst[n])
+    displayAnList(lst,n+1)
+lst = [1,2,3,4,5,6,7]
+displayAnList(lst,0)
+"""
+"""
+def displayAnList(lst,n):
+    if(len(lst)==n):
+        return
+    displayAnList(lst, n + 1)
+    print(lst[n])
+
+lst = [1,2,3,4,5,6,7]
+displayAnList(lst,0)
+"""
+"""
+def MaxEle(lst,n):
+    if(len(lst)==n):
+        return -1
+    return max(MaxEle(lst,n+1),lst[n])
+max_element = MaxEle([2,7,3,1,87,12,54,8],0)
+print(max_element)
+"""
+"""
+def firstIdx(lst,idx,val):
+    if(len(lst)==idx):
+        return -1
+
+    if(val==lst[idx]):
+        return idx
+    else:
+        return firstIdx(lst,idx+1,val)
+
+print(firstIdx([2,7,3,12,87,12,54,8],0,12))
+"""
+
+"""
+lst_idx = [-1]
+def lastIdx(lst, idx, val):
+    if (len(lst) == idx):
+        return -1
+
+    if(val==lst[idx]):
+        lst_idx[0] = idx
+        print(lst_idx)
+    lastIdx(lst, idx + 1, val)
+    return lst_idx[0]
+
+
+# print(lastIdx([2, 7, 3, 12, 87, 12, 54, 8], 0, 12))
+"""
+
+"""
+def lastIdx(lst, idx, val):
+    if (len(lst) == idx):
+        return -1
+
+    # last_returned = lastIdx(lst,idx+1, val)
+    # if(last_returned==-1 and val==lst[idx]):
+    #     last_returned = idx
+    # return last_returned
+
+    last_returns = lastIdx(lst,idx+1,val)
+    if(last_returns==-1):
+        if(lst[idx]==val):
+            return idx
+        else:
+            return -1
+    else:
+        return last_returns
+
+print(lastIdx([2, 7, 3, 12, 87, 12, 54, 8], 0, 12))
+"""
+"""
+def allIndices(lst,val,idx,fsf):
+    if(len(lst)==idx):
+        return [-1]*(fsf)
+
+    if(lst[idx]==val):
+        ilst = allIndices(lst, val, idx + 1, fsf+1)
+        ilst[fsf] = idx
+        return ilst
+    else:
+        return allIndices(lst,val,idx+1,fsf)
+
+
+print(allIndices([2, 7, 3, 12, 87, 12, 54, 8,12],12,0,0))
+"""
+
 """
 def Subsequence(s):
-    if(s == ""):
+    if(len(s)==0):
         return [""]
-    a = s[0] # a
-    if(len(s)==1):
-        b = ""
-        # bc
-    else:
-        b = s[1:]
 
-    lst_1 = Subsequence(b)
+    lst_1 = Subsequence(s[1:])
     lst_ans = []
     for st in lst_1:
         lst_ans.append(st)
-    for i in range(len(lst_1)):
-        lst_ans.append(a+lst_1[i])
+    for st in lst_1:
+        lst_ans.append(s[0]+st)
     return lst_ans
+lst = Subsequence('abc')
+print(lst)
 
-print(Subsequence('abc'))
-
-def subsequence(s,s_dones):
+def subsequence(s,s_done):
     if(s==''):
-        print('->',s_dones)
+        print(f"'{s_done}'")
         return
-    subsequence(s[1:], s_dones)
-    subsequence(s[1:],s_dones+s[0])
+
+    subsequence(s[1:],s_done)
+    subsequence(s[1:],s_done+s[0])
 
 subsequence('abc','')
-
-def subsequence(s,s_dones):
-    if(len(s)==0):
-        print(s_dones,end = ' ')
-        return
-    for i in range(len(s)):
-        subsequence(s[:i]+s[i+1:],s_dones+s[i])
-
-subsequence('abcd','')
-
 """
 """
 # Get Keypad Combination
+
 phoneKeys = ['.;','abc','def','ghi','jkl','mno','pqrs','tu','vwx','yz']
-def hacker(str):
+def getKPC(str):
     if(len(str)==0):
         return [""]
-    a = str[0]
-    if(len(str)!=1):
-        b = str[1:]
-    else:
-        b=''
+
     lst_ans = []
-    last_combinations_lst = hacker(b)
-    curr_num_key_chars = phoneKeys[int(a)]
-    for char_idx in range(len(curr_num_key_chars)):
-        for comb_char_idx in range(len(last_combinations_lst)):
-            lst_ans.append(curr_num_key_chars[char_idx]+last_combinations_lst[comb_char_idx])
-
+    last_combinations_lst = getKPC(str[1:])
+    for preStr in last_combinations_lst:
+        for comb_char in phoneKeys[int(str[0])]:
+            lst_ans.append(comb_char+preStr)
     return lst_ans
-print(hacker('678'))
 
+print(getKPC('619'))
 
-def hacker2(s,s_ans):
+def getKPC2(s,s_ans):
     if(s==''):
-        print(s_ans)
+        print(f"'{s_ans}'")
         return
-    for i in range(len(phoneKeys[int(s[0])])):
-        hacker2(s[1:],s_ans + phoneKeys[int(s[0])][i])
-
-hacker2('678','')
+    for keyChar in phoneKeys[int(s[0])]:
+        getKPC2(s[1:],s_ans+keyChar)
+getKPC2('678','')
 """
 """
 # def allpaths(n):
@@ -261,20 +411,36 @@ hacker2('678','')
 #
 # print(allpaths(3))
 
-def allpaths(n):
-    if(n==1):
-        return ['1']
-    lst_ans = []
-    for i in range(1,n):
-        for path in allpaths(n - i):
-            lst_ans.append( str(i)+path)
-    if (n != 1):
-        lst_ans.append(str(n))
-    return lst_ans
+# def allpaths(n):
+#     if(n==1):
+#         return ['1']
+#     lst_ans = []
+#     for i in range(1,n):
+#         for path in allpaths(n - i):
+#             lst_ans.append( str(i)+path)
+#     if (n != 1):
+#         lst_ans.append(str(n))
+#     return lst_ans
+#
+# print(allpaths(3))
 
-print(allpaths(4))
-"""
-"""
+def allpaths(n):
+    if(n==0):
+        return [""]
+    elif (n < 0):
+        return []
+
+    lst_ans = []
+    for lcl_str in allpaths(n-1):
+        lst_ans.append("1"+lcl_str)
+    for lcl_str in allpaths(n-2):
+        lst_ans.append("2"+lcl_str)
+    for lcl_str in allpaths(n-3):
+        lst_ans.append("3"+lcl_str)
+
+    return lst_ans
+allP = allpaths(3)
+print(allP)
 def allpaths(n):
     if not n:
         return ['']
@@ -290,6 +456,7 @@ def allpaths(n):
 print(allpaths(4))
 """
 """
+
 def allpaths(n):
     if(n==0):
         return ['']
@@ -322,6 +489,23 @@ def allpaths2(s,s_ans):
 allpaths2(4,'')
 """
 """
+def getmasepath1(x1,y1,x2,y2):
+    if(x1==x2 and y1==y2):
+        return [""]
+
+    path_lst = []
+
+    if(x1<x2):
+        for aftHmove in getmasepath1(x1 + 1,y1 , x2, y2):
+            path_lst.append("v"+ aftHmove)
+    if(y1<y2):
+        for aftVmove in getmasepath1(x1,y1+1,x2,y2):
+            path_lst.append("h"+aftVmove)
+
+    return path_lst
+mzPath = getmasepath1(1,1,3,3)
+print(mzPath)
+
 def getmasepath(x1,y1,x2,y2):
     if(x1==x2 and y1==y2):
         return ['']
@@ -346,19 +530,36 @@ print(getmasepath(1,1,3,3))
 def getmasepath2(x1,y1,x2,y2,s_ans):
     if(x1==x2 and y1==y2):
         print(s_ans)
-    if(x1>x2 and y1>y2):
+    if(x1>x2 or y1>y2):
         return
 
-    if(x1<x2):
-        getmasepath2(x1+1,y1,x2,y2,s_ans+'-')
-    if (y1 < y2):
-        getmasepath2(x1,y1+1,x2,y2,s_ans+'|')
+    getmasepath2(x1+1,y1,x2,y2,s_ans+'h')
+    getmasepath2(x1,y1+1,x2,y2,s_ans+'v')
 
 getmasepath2(1,1,3,3,'')
 """
-
 """
 def getmasepath(x1,y1,x2,y2):
+    if(x1==x2 and y1==y2):
+        return ['']
+
+    path_lst = []
+
+    if(x1<x2):
+        for aftHmove in getmasepath(x1 + 1, y1, x2, y2):
+            path_lst.append("v" + aftHmove)
+    if(y1<y2):
+        for aftVmove in getmasepath(x1, y1 + 1, x2, y2):
+            path_lst.append("h" + aftVmove)
+    if(x1<x2 and y1<y2):
+        for aftDmove in getmasepath(x1+1, y1 + 1, x2, y2):
+            path_lst.append("d" + aftDmove)
+
+    return path_lst
+
+mzPath = getmasepath(1,1,3,3)
+print(mzPath)
+def getmasepath1(x1,y1,x2,y2):
     if(x1==x2 and y1==y2):
         return ['']
     vpath = []
@@ -384,51 +585,72 @@ def getmasepath(x1,y1,x2,y2):
 
 print(getmasepath(1,1,3,3))
 
-def getmasepath2(x1,y1,x2,y2,s_ans):
-    if(x1==x2 and y1==y2):
-        print(s_ans)
-    if(x1>x2 and y1>y2):
-        return
 
-    if(x1<x2):
-        getmasepath2(x1+1,y1,x2,y2,s_ans+'-')
-    if (y1 < y2):
-        getmasepath2(x1,y1+1,x2,y2,s_ans+'|')
-    if(x1<x2 and y1 < y2):
-        getmasepath2(x1+1,y1+1,x2,y2,s_ans+'/')
 
-getmasepath2(1,1,3,3,'')
 
-"""
-"""
 def getmasepath2(x1,y1,x2,y2,s_ans):
     if(x1==x2 and y1==y2):
         print(s_ans)
 
     for i in range(1,x2-x1+1):
-        getmasepath2(x1+i,y1,x2,y2,s_ans+'-'+str(i))
+        getmasepath2(x1+i,y1,x2,y2,s_ans+'h'+str(i))
     for i in range(1,y2-y1+1):
-        getmasepath2(x1,y1+i,x2,y2,s_ans+'|'+str(i))
+        getmasepath2(x1,y1+i,x2,y2,s_ans+'v'+str(i))
     for i in range(1,min(y2-y1,x2-x1)+1):
-        getmasepath2(x1+i,y1+i,x2,y2,s_ans+'/'+str(i))
+        getmasepath2(x1+i,y1+i,x2,y2,s_ans+'d'+str(i))
 
 getmasepath2(1,1,3,3,'')
+def getmasepath(x1,y1,x2,y2):
+    if(x1==x2 and y1==y2):
+        return ['']
+
+    path_lst = []
+
+
+    for i in range(1,x2-x1+1):
+        for aftHmove in getmasepath(x1 + i, y1, x2, y2):
+            path_lst.append(f"h{i}{aftHmove}")
+
+    for i in range(1,y2-y1+1):
+        for aftVmove in getmasepath(x1, y1 + i, x2, y2):
+            path_lst.append(f"v{i}{aftVmove}")
+
+    for i in range(1,min(x2-x1+1,y2-y1+1)):
+        for aftDmove in getmasepath(x1+i, y1 + i, x2, y2):
+            path_lst.append(f"d{i}{aftDmove}")
+
+    return path_lst
+
+mzPath = getmasepath(1,1,3,3)
+print(mzPath)
 """
+
+"""
+def permutations(s,s_dones):
+    if(len(s)==0):
+        print(s_dones,end = ' ')
+        return
+    for i in range(len(s)):
+        permutations(s[:i]+s[i+1:],s_dones+s[i])
+
+permutations('abc','')
+"""
+
 # ---------------<Print Encodings>------------------------
 """
 def Encodings(n,s):
     if(n==''):
         print(s)
-    if(len(n)<=0):
+    if(len(n)<=0 or n[0]=='0'):
         return
-    Encodings(n[1:],s + chr(int(n[0])+96) )
-    # if (len(n) == 2):
-    #     Encodings('',chr(int(n[0:2])+96))
-    if(len(n)>=2 and int(n[0:2])<=26):
-        Encodings(n[2:],s +   chr(int(n[0:2])+96)         )
+    Encodings(n[1:],s + chr(int(n[0])+96))
+    if(len(n)>=2 and int(n[0:2])<=26 and n[0]!='0'):
+        Encodings(n[2:],s +   chr(int(n[0:2])+96) )
 
-Encodings('9870','')
+
+Encodings('12103','')
 """
+# ---------------<Flood Fill>------------------------
 """
 import numpy as np
 map_2D = np.zeros((6,7),dtype=int)
@@ -440,7 +662,14 @@ def floodfill(maze,row,col,psf,visited_map):
     if(row<0 or col<0 or row==len(maze) or col == len(maze[0]) or maze[row][col] == 1 or visited_map[row][col]==True):
         return
     if(row == len(maze)-1 and col == len(maze[0])-1):
+        print("-----------------------------")
+        visited_map[row][col] = True
+        for i in range(len(visited_map)):
+            for j in range(len(visited_map[0])):
+                print(1 if (visited_map[i][j]) else '`',end=" ")
+            print()
         print(psf)
+        visited_map[row][col] = False
         return
     visited_map[row][col] = True
     floodfill(maze, row, col + 1, psf + "R", visited_map)
@@ -448,48 +677,166 @@ def floodfill(maze,row,col,psf,visited_map):
     floodfill(maze, row, col - 1, psf + "L", visited_map)
     floodfill(maze, row + 1, col, psf + "D", visited_map)
     visited_map[row][col] = False
+
 floodfill(map_2D,0,0,'',visited_map)
 """
+# map_2D = np.zeros(list(map(int,input().split())),dtype=int)
+"""
+6 7
+0 1 0 0 0 0 0
+0 1 0 1 1 1 0
+0 0 0 0 0 0 0
+1 0 1 1 0 1 1
+1 0 1 1 0 1 1
+1 0 0 0 0 0 0
+"""
+"""
+def floodfill(maze,row,col,psf):
+    if(row<0 or col<0 or row>=len(maze) or col>=len(maze[0]) or maze[row][col]==True):
+        return
+
+    if(row == len(maze)-1 and col == len(maze[0])-1):
+        print(psf)
+        return
+    maze[row][col] = True
+    floodfill(maze,row,col+1,psf+'r')
+    floodfill(maze,row+1,col,psf+'b')
+    floodfill(maze,row,col-1,psf+'l')
+    floodfill(maze,row-1,col,psf+'t')
+    maze[row][col] = False
+map_2D = []
+i,j = map(int,input().split())
+for i in range(i):
+    map_2D.append(list(map(int,input().split())))
+
+print(map_2D)
+floodfill(map_2D,0,0,'')
+"""
+
+# ---------------<Target Sum Subsets>------------------------
+"""
+def printTargetSumSubset(lst,lst_ans):
+    if(len(lst)==0):
+        if(sum(lst_ans)==target):
+            print("->",lst_ans)
+        return
+
+    printTargetSumSubset(lst[1:],lst_ans+[lst[0]])
+    printTargetSumSubset(lst[1:],lst_ans)
+
+target = 60
+lst_num = [10,20,30,40,50,60]
+printTargetSumSubset(lst_num,[])
+"""
+# ---------------<N Queens>------------------------
+
+"""
+def isItaSafePlaceForTheQueen(chess,row,col):
+    for r in range(row-1,-1,-1):
+        if(chess[r][col]):
+            return False
+    for r,c in zip(range(row-1,-1,-1),range(col-1,-1,-1)):
+        if (chess[r][c]):
+            return False
+    for r,c in zip(range(row-1,-1,-1),range(col+1,len(chess[0]))):
+        if(chess[r][c]):
+            return False
+    return True
+
+
+def printNQueens(chess,row,qsf):
+    if row==len(chess):
+        print(qsf)
+        return
+
+    for col in range(len(chess[0])):
+        if isItaSafePlaceForTheQueen(chess,row,col)==False:
+            continue
+
+        chess[row][col] = 1
+        printNQueens(chess,row+1,f"{qsf} {row}-{col},")
+        chess[row][col] = 0
+
+import numpy as np
+chess = np.zeros((4,4),dtype=int)
+
+printNQueens(chess,0,"")
+"""
+# ---------------<Knights Tour>------------------------
+"""
+def displayBoard(chess):
+    for i in range(len(chess)):
+        for j in range(len(chess[0])):
+            print(chess[i][j],end=" ")
+        print()
+
+def printknightsTour(chess,r,c,move):
+    if r<0 or c<0 or r>=len(chess) or c>=len(chess) or chess[r][c]!=0:
+        return
+    elif move == len(chess)*len(chess):
+        chess[r][c] = move
+        displayBoard(chess)
+        chess[r][c] = 0
+        return
+
+    chess[r][c] = move
+    printknightsTour(chess, r - 2, c + 1, move+1)
+    printknightsTour(chess, r - 1, c + 2, move+1)
+    printknightsTour(chess, r + 1, c + 2, move+1)
+    printknightsTour(chess, r + 2, c + 1, move+1)
+    printknightsTour(chess, r + 2, c - 1, move+1)
+    printknightsTour(chess, r + 1, c - 2, move+1)
+    printknightsTour(chess, r - 1, c - 2, move+1)
+    printknightsTour(chess, r - 2, c - 1, move+1)
+    chess[r][c] = 0
+
+
+n = int(input())
+import numpy as np
+chess = np.zeros((n,n),dtype=int)
+x,y = map(int,input().split())
+printknightsTour(chess,x,y,1)
+"""
+"""
+def displayBoard(chess):
+    for i in range(len(chess)):
+        for j in range(len(chess[0])):
+            print(chess[i][j],end=" ")
+        print()
+
+def printknightsTour(chess,r,c,move):
+    if r<0 or c<0 or r>=len(chess) or c>=len(chess) or chess[r][c]!=0:
+        return
+    elif move == len(chess)*len(chess):
+        chess[r][c] = move
+        displayBoard(chess)
+        chess[r][c] = 0
+        return
+
+    chess[r][c] = move
+    printknightsTour(chess, r - 2, c + 1, move+1)
+    printknightsTour(chess, r - 1, c + 2, move+1)
+    printknightsTour(chess, r + 1, c + 2, move+1)
+    printknightsTour(chess, r + 2, c + 1, move+1)
+    printknightsTour(chess, r + 2, c - 1, move+1)
+    printknightsTour(chess, r + 1, c - 2, move+1)
+    printknightsTour(chess, r - 1, c - 2, move+1)
+    printknightsTour(chess, r - 2, c - 1, move+1)
+    chess[r][c] = 0
+
+
+n = int(input())
 # import numpy as np
-# mx_1 = np.array([[1,2,3],
-#                  [4,5,6],
-#                  [7,8,9]])
-# mx_2 = np.array([[1,2,3],
-#                  [4,5,6],
-#                  [7,8,9]])
-#
-# print(np.matmul(mx_1,mx_2))
-# # mx_ans = np.zeros((3,3),dtype=int)
-# # print(len(mx_ans[0]))
-# # print(mx_1[2][1])
-# mx_ans = np.zeros((3,3),dtype=int)
-# print(mx_ans)
-# for i in range(len(mx_ans)):
-#     for j in range(len(mx_ans[0])):
-#         for k in range(len(mx_ans[0])):
-#             mx_ans[i][j] += mx_1[i][k]*mx_2[k][j]
-#
-# print(mx_ans)
+# chess = np.zeros((n,n),dtype=int)
+chess = []
+for i in range(n):
+    temp = []
+    for j in range(n):
+        temp.append(0)
+    chess.append(temp)
 
-
-
-
+x = int(input())
+y = int(input())
+printknightsTour(chess,x,y,1)
 """
-def find(lst,val,start,end):
-    # mid = len(lst)//2
-    mid = (end+start)//2
-    new_start = start
-    new_end = end
-    if(lst[mid]==val):
-        return mid
-    elif(lst[mid]<val):
-        new_start = mid +1
-    elif(lst[mid]>val):
-        new_end = mid - 1
-
-    find(lst,val,new_start,new_end)
-
-print(find([0,1,2,3,4,5,6,7,8],4,0,8))
-"""
-
-#-------------------------------------end of recursion>--------------------
+# -------------------------------------<end of recursion>--------------------
