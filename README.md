@@ -47,6 +47,9 @@
 > these people are fuel for this project.
 
 
+<!-- ## Stargazers over time
+[![Stargazers over time](https://starchart.cc/Ayon-SSP/The-SDE-Prep.svg)](https://starchart.cc/Ayon-SSP/The-SDE-Prep) -->
+
 # 📑 [`References`]()
 
 ## 📚 [`Books`]()
