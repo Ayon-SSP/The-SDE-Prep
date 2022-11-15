@@ -22,4 +22,4 @@ jobs:
         repo: The-SDE-Prep
         plugin_people: yes
         plugin_people_limit: 2000
-        plugin_people_types: contributors, stargazers, watchers
+        plugin_people_types: contributors, stargazers
