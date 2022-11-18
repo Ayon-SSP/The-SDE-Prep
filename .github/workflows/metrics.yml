@@ -23,3 +23,11 @@ jobs:
         plugin_people: yes
         plugin_people_limit: 2000
         plugin_people_types: contributors, stargazers
+        plugin_contributors: yes
+        plugin_contributors_sections: categories
+        plugin_contributors_categories: |
+          {
+            "🧩 Plugins / 🖼️ templates":["source/plugins/**", "source/templates/**"],
+            "📚 Documentation":["README.md", "**/README.md", "**/metadata.yml"],
+            "💻 Code (other)":["source/**", "Dockerfile"]
+          }
