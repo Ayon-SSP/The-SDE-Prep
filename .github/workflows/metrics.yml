@@ -34,3 +34,9 @@ jobs:
         #     "📚 Documentation":["README.md", "**/README.md", "**/metadata.yml"],
         #     "💻 Code (other)":["source/**", "Dockerfile"]
         #   }
+        
+        
+        # 🧮 Repositories traffic
+        plugin_traffic: yes
+
+        # 
