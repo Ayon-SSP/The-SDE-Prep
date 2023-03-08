@@ -11,6 +11,121 @@
 #### 🧮 Radix Sort [code](#rs)
 <br>
 
+<a id="t"></a>
+
+## <p aline="center">All Time⌚ & Space🗑️ Complexity</p>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Table</title> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
+    <!-- <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        th, td {
+            text-align: left;
+            padding: 8px;
+            text-align: center;
+        }
+        tr:nth-child(even){background-color: #f2f2f2}
+        th {
+            background-color: rgb(185, 119, 255);
+            color: white;
+        }
+        .redcolors {
+            color: red;
+        }
+    </style> -->
+</head>
+<body>
+    <table border="2" width="100%">
+        <tr>
+            <th rowspan="2">Algorithem</th>
+            <th colspan="3">Time Complexity</th>
+            <th rowspan="2">Worst Case space Complexity</th>
+        </tr>
+        <tr>
+            <th>Best</th>
+            <th>Average</th>
+            <th>Worst</th>
+        </tr>
+        <tr>
+            <td>Bubble Sort</td>
+            <td>O(n)</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(1)</td>
+        </tr>
+        <tr>
+            <td>Selection Sort</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(1)</td>
+        </tr>
+        <tr>
+            <td>Insertion Sort</td>
+            <td>O(n)</td>
+            <td>O(n^2)</td>
+            <td>O(n^2)</td>
+            <td>O(1)</td>
+        </tr>
+        <tr>
+            <td>Merge Sort</td>
+            <td>O(n log n)</td>
+            <td>O(n log n)</td>
+            <td>O(n log n)</td>
+            <td>O(n)</td>
+        </tr>
+        <tr>
+            <td>Quick Sort</td>
+            <td>O(n log n)</td>
+            <td>O(n log n)</td>
+            <td>O(n^2)</td>
+            <td>O(n)</td>
+        </tr>
+        <tr>
+            <td>Heap Sort</td>
+            <td>O(n log n)</td>
+            <td>O(n log n)</td>
+            <td>O(n log n)</td>
+            <td>O(1)</td>
+        </tr>
+        <tr>
+            <td>Count Sort</td>
+            <td>O(n+k)</td>
+            <td>O(n+k)</td>
+            <td>O(n+k)</td>
+            <td>O(k)</td>
+        </tr>
+        <tr>
+            <td>Bucket Sort</td>
+            <td>O(n+k)</td>
+            <td>O(n+k)</td>
+            <td>O(n^2)</td>
+            <td>O(n)</td>
+        </tr>
+        <tr>
+            <td>Radix Sort</td>
+            <td>O(n*k)</td>
+            <td>O(n*k)</td>
+            <td>O(n*k)</td>
+            <td>O(n+k)</td>
+        </tr>
+    </table>
+</body>
+</html>
+
+
 ### If want to take list input
 ```python
 lst = list(map(int,input().split()))
@@ -416,117 +531,3 @@ Cocktail Sort
 Strand Sort -->
 <br>
 <br>
-<a id="t"></a>
-
-## <p aline="center">All Time⌚ & Space🗑️ Complexity</p>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <title>Table</title> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap" rel="stylesheet">
-    <!-- <style>
-        table {
-            border-collapse: collapse;
-            width: 100%;
-            font-family: 'Ubuntu', sans-serif;
-        }
-        th, td {
-            text-align: left;
-            padding: 8px;
-            text-align: center;
-        }
-        tr:nth-child(even){background-color: #f2f2f2}
-        th {
-            background-color: rgb(185, 119, 255);
-            color: white;
-        }
-        .redcolors {
-            color: red;
-        }
-    </style> -->
-</head>
-<body>
-    <table border="2" width="100%">
-        <tr>
-            <th rowspan="2">Algorithem</th>
-            <th colspan="3">Time Complexity</th>
-            <th rowspan="2">Worst Case space Complexity</th>
-        </tr>
-        <tr>
-            <th>Best</th>
-            <th>Average</th>
-            <th>Worst</th>
-        </tr>
-        <tr>
-            <td>Bubble Sort</td>
-            <td>O(n)</td>
-            <td>O(n^2)</td>
-            <td>O(n^2)</td>
-            <td>O(1)</td>
-        </tr>
-        <tr>
-            <td>Selection Sort</td>
-            <td>O(n^2)</td>
-            <td>O(n^2)</td>
-            <td>O(n^2)</td>
-            <td>O(1)</td>
-        </tr>
-        <tr>
-            <td>Insertion Sort</td>
-            <td>O(n)</td>
-            <td>O(n^2)</td>
-            <td>O(n^2)</td>
-            <td>O(1)</td>
-        </tr>
-        <tr>
-            <td>Merge Sort</td>
-            <td>O(n log n)</td>
-            <td>O(n log n)</td>
-            <td>O(n log n)</td>
-            <td>O(n)</td>
-        </tr>
-        <tr>
-            <td>Quick Sort</td>
-            <td>O(n log n)</td>
-            <td>O(n log n)</td>
-            <td>O(n^2)</td>
-            <td>O(n)</td>
-        </tr>
-        <tr>
-            <td>Heap Sort</td>
-            <td>O(n log n)</td>
-            <td>O(n log n)</td>
-            <td>O(n log n)</td>
-            <td>O(1)</td>
-        </tr>
-        <tr>
-            <td>Count Sort</td>
-            <td>O(n+k)</td>
-            <td>O(n+k)</td>
-            <td>O(n+k)</td>
-            <td>O(k)</td>
-        </tr>
-        <tr>
-            <td>Bucket Sort</td>
-            <td>O(n+k)</td>
-            <td>O(n+k)</td>
-            <td>O(n^2)</td>
-            <td>O(n)</td>
-        </tr>
-        <tr>
-            <td>Radix Sort</td>
-            <td>O(n*k)</td>
-            <td>O(n*k)</td>
-            <td>O(n*k)</td>
-            <td>O(n+k)</td>
-        </tr>
-    </table>
-</body>
-</html>
-
