@@ -226,6 +226,32 @@ step 4: Stop
 ```
 #### Code :
 ```python
+class Solution:
+    def merge_two_sorted_lists(self, left: List[int], right: List[int], merged) -> List[int]:
+        leftIdx, rightIdx = 0, 0
+        while leftIdx < len(left) and rightIdx < len(right):
+            if left[leftIdx] < right[rightIdx]:
+                merged[leftIdx + rightIdx] = left[leftIdx]
+                leftIdx += 1
+            else:
+                merged[leftIdx + rightIdx] = right[rightIdx]
+                rightIdx += 1
+        if leftIdx < len(left):
+            merged[leftIdx+rightIdx:] = left[leftIdx:]
+        elif rightIdx < len(right):
+            merged[leftIdx + rightIdx:] = right[rightIdx:]
+        return merged
+
+    def sortArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        if n == 1:
+            return nums
+        return self.merge_two_sorted_lists(self.sortArray(nums[:n//2]), self.sortArray(nums[n//2:]), nums)
+
+t = Solution()
+print(t.merge_two_sorted_lists([1,3,5,6,7],[2,4],[11,2,11,41,5,16,73]))
+```
+```python
 def merge_sort(lst):
     if len(lst) <= 1:
         return
