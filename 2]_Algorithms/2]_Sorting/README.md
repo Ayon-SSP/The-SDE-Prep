@@ -357,6 +357,28 @@ if __name__ == '__main__':
 
 #### Code :
 ```python
+def partion(listToMakePartion):
+    j = 0
+    p = listToMakePartion[-1]
+    for i in range(len(listToMakePartion)):
+        if(listToMakePartion[i]<=p):
+            listToMakePartion[i],listToMakePartion[j] = listToMakePartion[j],listToMakePartion[i]
+            j+=1
+    j-=1
+    return listToMakePartion,j
+
+def quickSort(lstToSort):
+    if(len(lstToSort)<=1):
+        return lstToSort
+    lstToSort,p = partion(lstToSort)
+    left = lstToSort[:p]
+    right = lstToSort[p+1:]
+
+    leftSorted = quickSort(left)
+    rightSorted = quickSort(right)
+    return leftSorted+[lstToSort[p]]+rightSorted
+```
+```python
 def partition(lst,l,r):
     pi = lst[r]
     j = l
