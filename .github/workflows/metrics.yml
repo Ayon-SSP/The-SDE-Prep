@@ -21,7 +21,7 @@ jobs:
         user: Ayon-SSP
         repo: The-SDE-Prep
         plugin_people: yes
-        plugin_people_limit: 2000
+        plugin_people_limit: 3000
         plugin_people_types: contributors, stargazers
 
         # 🏅 Repository contributors
