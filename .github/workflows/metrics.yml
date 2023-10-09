@@ -43,3 +43,4 @@ jobs:
         plugin_stargazers: yes
         plugin_stargazers_charts_type: chartist
         plugin_stargazers_charts: no
+        
