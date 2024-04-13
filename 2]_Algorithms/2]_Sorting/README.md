@@ -1,14 +1,15 @@
 # 🖇️ Sorting Algorithms
 ### 💫 All Time⌚ & Space🗑️ Complexity [\[Table\]](#t)
-#### ❄️ Bubble Sort [code](#bs)
-#### 🕵️ Selection Sort [code](#ss)
-#### 🚏 Insertion Sort [code](#is)
-#### 🕸️ Merge Sort [code](#ms)
-#### ⏱️ Quick Sort [code](#qs)
-#### 🦾 Heap Sort [code](#hs)
-#### 📊 Count Sort [code](#cs)
-#### 🪣 Bucket Sort [code](#bus)
-#### 🧮 Radix Sort [code](#rs)
+1. ❄️ Bubble Sort [code](#bs)
+2. 🕵️ Selection Sort [code](#ss)
+3. 🚏 Insertion Sort [code](#is)
+4. 🕸️ Merge Sort [code](#ms)
+5. ⏱️ Quick Sort [code](#qs)
+6. 🦾 Heap Sort [code](#hs)
+7. 📊 Count Sort [code](#cs)
+8. 🪣 Bucket Sort [code](#bus)
+9. 🧮 Radix Sort [code](#rs)
+### 📑 Problems [problems](#problems)
 <br>
 
 <a id="t"></a>
@@ -598,3 +599,70 @@ Cocktail Sort
 Strand Sort -->
 <br>
 <br>
+<a id="problems"></a>
+
+# [📑 Problems](2]_Sorting.md)
+### Sort 01
+> Using using partioning logic of quick sort
+
+### Sort Date's
+> Like Redix sort but with date month year.
+
+### 75. Sort Colors: [🪖 Leetcode](https://leetcode.com/problems/sort-colors/)
+```py
+class Solution:
+    def sortColors(self, nums: List[int]) -> None:
+        i, j, ptr = 0, len(nums) - 1, 0
+        
+        while ptr <= j:
+            if nums[ptr] == 0:
+                nums[i], nums[ptr]  = nums[ptr], nums[i]            
+                i += 1
+                ptr += 1
+            elif nums[ptr] == 1:
+                ptr += 1
+            elif nums[ptr] == 2:
+                nums[ptr], nums[j] = nums[j], nums[ptr]
+                j -= 1
+```
+### 912. Sort an Array: [🪖 Leetcode](https://leetcode.com/problems/sort-an-array/)
+```py
+# /912. Sort an Array
+class Solution:
+    def merge_two_sorted_lists(self, left: List[int], right: List[int], merged) -> List[int]:
+        leftIdx, rightIdx = 0, 0
+        while leftIdx < len(left) and rightIdx < len(right):
+            if left[leftIdx] < right[rightIdx]:
+                merged[leftIdx + rightIdx] = left[leftIdx]
+                leftIdx += 1
+            else:
+                merged[leftIdx + rightIdx] = right[rightIdx]
+                rightIdx += 1
+        if leftIdx < len(left):
+            merged[leftIdx+rightIdx:] = left[leftIdx:]
+        elif rightIdx < len(right):
+            merged[leftIdx + rightIdx:] = right[rightIdx:]
+        return merged
+
+    def sortArray(self, nums: List[int]) -> List[int]:
+        n = len(nums)
+        if n == 1:
+            return nums
+        return self.merge_two_sorted_lists(self.sortArray(nums[:n//2]), self.sortArray(nums[n//2:]), nums)
+
+t = Solution()
+print(t.merge_two_sorted_lists([1,3,5,6,7],[2,4],[11,2,11,41,5,16,73]))
+```
+```py
+# TLE
+class Solution:
+    def sortArray(self, nums: List[int]) -> List[int]:
+        if len(nums) <= 1:
+            return nums
+
+        pi = nums[len(nums) - 1]
+        less = [num for num in nums[:len(nums) - 1] if num <= pi]
+        greater = [num for num in nums[:len(nums) - 1] if num > pi]
+
+        return self.sortArray(less) + [pi] + self.sortArray(greater)
+```
