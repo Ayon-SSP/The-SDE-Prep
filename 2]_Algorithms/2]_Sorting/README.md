@@ -440,6 +440,25 @@ if __name__ == '__main__':
         print(" -> ","After : ", quick_sort(lst))
 ```
 
+### Quick Select
+```py
+def quickSelect(lstFroSel,sel):
+    lstFroSel,p = partion(lstFroSel)
+    ans1,ans2=None,None
+    if(p==sel):
+        # print(lstFroSel[p])
+        return lstFroSel[p]
+    elif(p<sel):
+        ans1 = quickSelect(lstFroSel[p+1:],sel-p-1)
+    elif(sel<p):
+        ans2 = quickSelect(lstFroSel[:p],sel)
+    return None if(ans1==None and ans2==None) else (ans1 if ans1!=None else ans2)
+
+print(lst)
+for i in range(6+4):
+    print(quickSelect([9,512,231,5,0,-12,7,123,77,-985],i))
+```
+
 <a id="hs"></a>
 
 ## 🦾 Heap Sort
