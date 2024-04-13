@@ -470,6 +470,7 @@ for i in range(6+4):
 <a id="cs"></a>
 
 ## 📊 Count Sort
+> also to maintain right order we do stable sort. it's like consider the list elements like an object that needs to sort with respect to their scores
 
 **Counting sort** is a sorting algorithm that sorts the elements of an array by counting the number of occurrences of each unique element in the array. The count is stored in an auxiliary array and the sorting is done by mapping the count as an index of the auxiliary array.
 
