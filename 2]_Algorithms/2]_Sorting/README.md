@@ -601,7 +601,7 @@ Strand Sort -->
 <br>
 <a id="problems"></a>
 
-# [📑 Problems](2]_Sorting.md)
+# [📑 Problems]
 ### Sort 01
 > Using using partioning logic of quick sort
 
